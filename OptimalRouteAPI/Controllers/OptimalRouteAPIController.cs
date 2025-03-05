@@ -31,7 +31,7 @@ namespace OptimalRouteAPI.Controllers
 
                     result = _optimalRouteService.CalculateShortestRoute(bodyRequest);
 
-                    return Ok();
+                    return Ok(result);
                }
                catch(Exception ex)
                {
